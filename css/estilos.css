@@ -1,0 +1,494 @@
+/**{
+	margin:0;
+	padding:0;
+}*/
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #f6f7d4;
+  font-family: 'Product Sans', sans-serif; }
+
+ul li {
+  list-style: none; }
+
+nav ul li {
+  font-size: 2rem;
+  margin-right: 5rem; }
+
+.navbar-light {
+  background-color: #f6f7d4 !important; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #Fbd46d; }
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fdb90f;
+  font-weight: bold; }
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fdb90f; }
+
+.navbar-light .navbar-toggler {
+  color: #Fbd46d;
+  border-color: #Fbd46d; }
+
+.espacio {
+  padding-right: 5rem; }
+
+a {
+  text-decoration: none;
+  color: #Fbd46d; }
+
+nav ul li a:hover {
+  color: #fdb90f;
+  text-decoration: none; }
+
+h1 {
+  font-size: 4rem; }
+
+/*ver despues
+p{
+	font-size: 3rem;
+}
+
+.colorSubtitulos{
+	color: $azulOscuro;
+}
+
+
+*/
+h3 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+/*INDEX SECTION 1*/
+.seccion1 {
+  display: flex;
+  flex-direction: row;
+  width: 1045px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 20px; }
+
+.seccionDiv {
+  margin-left: 40px; }
+
+.seccion1 img {
+  height: 400px; }
+
+/*GRID MAPA*/
+.grid {
+  display: grid;
+  padding-top: 3rem;
+  justify-content: center;
+  height: 500px;
+  grid-template-areas: "mapa titulo" "mapa parrafo";
+  grid-template-rows: 15% 40%;
+  grid-template-columns: 45% 40%; }
+
+/*
+#gridIframe{
+  grid-area: mapa;
+  justify-self: right; 
+ }*/
+#gridH1 {
+  grid-area: titulo;
+  justify-self: left; }
+
+#gridP {
+  grid-area: parrafo;
+  justify-self: left; }
+
+/*GRID PASOS DE FABRICACION*/
+.grid2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 7rem;
+  margin-top: 7rem;
+  justify-content: space-evenly; }
+
+.grid2 div {
+  width: 400px;
+  height: 400px; }
+
+/*GRID QUIENES SOMOS*/
+.grid3 {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  justify-content: center;
+  display: grid;
+  grid-template-areas: "imagen subtitulo" "imagen titulo" "imagen parrafo";
+  grid-template-rows: 10% 30% 40%;
+  grid-template-columns: 30% 50%; }
+
+.grid3Imagen {
+  grid-area: imagen;
+  justify-self: center; }
+
+.grid3H2 {
+  grid-area: subtitulo;
+  justify-self: start; }
+
+.grid3H3 {
+  grid-area: titulo;
+  justify-self: start; }
+
+.grid3P {
+  grid-area: parrafo;
+  justify-self: start; }
+
+/*ANIMACION*/
+/*
+.animacion{
+   animation-duration: 2s;
+   animation-name: aparecer;
+   animation-timing-function: ease-in;
+}
+@keyframes aparecer {
+   0% {
+     opacity: 0.5;
+   }
+   50%{
+   	width: 90%;
+   }
+   100% {
+     opacity: 1;
+   }
+
+}
+  */
+.animacion2:hover {
+  animation-duration: 2s;
+  animation-name: mover;
+  animation-timing-function: ease-in; }
+
+@keyframes mover {
+  0% {
+    opacity: 0.5; }
+  50% {
+    transform: rotate(10deg); }
+  100% {
+    opacity: 1; } }
+
+.bFondo {
+  background-color: #f7f1be; }
+
+.form-control-lg {
+  font-size: 2rem; }
+
+.btn {
+  text-decoration: none;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #4f8a8b;
+  border-radius: 1px;
+  border: 2px solid #4f8a8b;
+  font-size: 1.5rem; }
+
+.btn:hover {
+  background-color: #6f8a8b;
+  border: 2px solid #6f8a8b; }
+
+/*CARD - TIPOS DE BIRRA*/
+.card {
+  border: none;
+  background-color: #f7f1be;
+  border-radius: 20px 10px;
+  -webkit-box-shadow: 10px 10px 35px -10px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 10px 10px 35px -10px rgba(0, 0, 0, 0.16);
+  box-shadow: 10px 10px 35px -10px rgba(0, 0, 0, 0.16); }
+
+.card img {
+  border-radius: 20px 10px 0px 0px; }
+
+.card-text {
+  font-size: 2rem; }
+
+/*FIN - CARD - TIPOS DE BIRRA*/
+/*------ FOOTER*/
+.centrar {
+  text-align: center; }
+
+.footer__contenedor--newsletter {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem; }
+
+.footer__contenedor--newsletter p {
+  font-size: 1.5rem;
+  color: #4f8a8b; }
+
+.footer__contenedor--newsletter h3 {
+  font-size: 2rem;
+  color: #222831;
+  padding-bottom: 0.3rem;
+  font-weight: bold; }
+
+.footer__contenedor--newsletter button {
+  text-decoration: none;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #4f8a8b;
+  border-radius: 1px;
+  border: 2px solid #4f8a8b;
+  justify-content: center; }
+
+.footer__contenedor--redes ul li {
+  font-size: 2rem;
+  margin-right: 5rem;
+  display: inline; }
+
+.fab {
+  color: #4f8a8b; }
+
+.footer__contenedor--flex a:hover {
+  color: #6f8a8b; }
+
+/*CAMBIO DE COLOR Boton Suscribirse*/
+.footer__contenedor--newsletter button:hover {
+  background-color: #6f8a8b; }
+
+.footer__contenedor--newsletter input {
+  padding: 10px;
+  /* width: 400px;*/
+  color: #000000;
+  background-color: #0000;
+  border-radius: 1px;
+  border: 2px solid #4f8a8b;
+  font-size: 1.8rem; }
+
+.bFuente {
+  font-family: 'Product Sans', sans-serif;
+  font-size: 1.5rem; }
+
+/*------ FIN FOOTER*/
+/* ---- Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  /*TIENDA*/
+  .agregarAlCarrito {
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #4f8a8b;
+    border-radius: 1px;
+    border: 2px solid #4f8a8b; }
+  .tiendaFlex {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-evenly; }
+  .tiendaFlex div {
+    margin: 15px; }
+  .tiendaFlex div h3 {
+    margin-top: 15px; }
+  /*FIN TIENDA*/
+  /*------ TIPOS DE BIRRA*/
+  .section__contenedor--tamanio {
+    width: 70vw;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-top: 2rem; }
+  .h2__texto {
+    font-size: 10rem;
+    text-align: center;
+    color: #Fbd46d; }
+  .h2__texto--sombra {
+    text-shadow: 2px 2px 5px #CECECE; }
+  .p__texto {
+    color: #4f8a8b;
+    font-size: 2.5rem;
+    text-align: justify; }
+  .card__texto {
+    color: #4f8a8b;
+    font-size: 2rem; }
+  .card__h2--marron {
+    color: #8a6606;
+    font-size: 3rem; }
+  /*------ FIN TIPOS DE BIRRA*/ }
+
+/*---- FIN 1200px and up)----------------------------*/
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /*TIENDA*/
+  .agregarAlCarrito {
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #4f8a8b;
+    border-radius: 1px;
+    border: 2px solid #4f8a8b;
+    width: 70%; }
+  .tiendaFlex {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center; }
+  .tiendaFlex div {
+    margin: 15px; }
+  .tiendaFlex div h3 {
+    margin-top: 15px;
+    font-size: 2.3rem;
+    color: #8a6606; }
+  .tiendaFlex div h2 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 2rem;
+    color: #222831; }
+  .imagen__tienda {
+    width: 70%; }
+  /*FIN TIENDA*/
+  /*------ TIPOS DE BIRRA*/
+  .section__contenedor--tamanio {
+    width: 70vw;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-top: 2rem; }
+  .h2__texto {
+    font-size: 8rem;
+    text-align: center;
+    color: #Fbd46d; }
+  .h2__texto--sombra {
+    text-shadow: 2px 2px 5px #CECECE; }
+  .p__texto {
+    color: #4f8a8b;
+    font-size: 2rem;
+    text-align: justify; }
+  .card__texto {
+    color: #4f8a8b;
+    font-size: 1.8rem; }
+  .card__h2--marron {
+    color: #8a6606;
+    font-size: 2.5rem; } }
+
+/*---- Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*TIENDA*/
+  .agregarAlCarrito {
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #4f8a8b;
+    border-radius: 1px;
+    border: 2px solid #4f8a8b; }
+  .tiendaFlex {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+    align-items: center; }
+  .tiendaFlex div {
+    margin: 15px; }
+  .tiendaFlex div h3 {
+    margin-top: 15px;
+    font-size: 2rem; }
+  .imagen__tienda {
+    width: 70%; }
+  /*FIN TIENDA*/
+  /*------ TIPOS DE BIRRA*/
+  .section__contenedor--tamanio {
+    width: 70vw;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-top: 2rem; }
+  .h2__texto {
+    font-size: 6rem;
+    text-align: center;
+    color: #Fbd46d; }
+  /*
+.h2__texto--sombra{
+	text-shadow: 2px 2px 5px #CECECE;
+}*/
+  .p__texto {
+    color: #4f8a8b;
+    font-size: 2rem;
+    text-align: justify;
+    padding-bottom: 1rem; }
+  .card__texto {
+    color: #4f8a8b;
+    font-size: 1.8rem; }
+  .card__h2--marron {
+    color: #8a6606;
+    font-size: 2.5rem; } }
+
+/*----- Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*TIENDA*/
+  .agregarAlCarrito {
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #4f8a8b;
+    border-radius: 1px;
+    border: 2px solid #4f8a8b; }
+  .tiendaFlex {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-evenly; }
+  .tiendaFlex div {
+    margin: 15px; }
+  .tiendaFlex div h3 {
+    margin-top: 15px;
+    font-size: 1rem; }
+  .imagen__tienda {
+    width: 80%; }
+  /*FIN TIENDA*/
+  /*------ TIPOS DE BIRRA*/
+  .section__contenedor--tamanio {
+    width: 70vw;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-top: 2rem; }
+  .h2__texto {
+    font-size: 4rem;
+    text-align: center;
+    color: #Fbd46d; }
+  .p__texto {
+    color: #4f8a8b;
+    font-size: 1.8rem;
+    text-align: justify;
+    padding-bottom: 1rem; }
+  .card__texto {
+    color: #4f8a8b;
+    font-size: 1.5rem; }
+  .card__h2--marron {
+    color: #8a6606;
+    font-size: 2rem; } }
+
+@media (max-width: 575.98px) {
+  /*------ TIPOS DE BIRRA*/
+  .section__contenedor--tamanio {
+    width: 70vw;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-top: 2rem; }
+  .h2__texto {
+    font-size: 3rem;
+    text-align: center;
+    color: #Fbd46d; }
+  .p__texto {
+    color: #4f8a8b;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding-bottom: 1rem; }
+  .card__texto {
+    color: #4f8a8b;
+    font-size: 1.2rem; }
+  .card__h2--marron {
+    color: #8a6606;
+    font-size: 1.8rem; } }
