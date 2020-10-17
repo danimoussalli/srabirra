@@ -3,6 +3,13 @@
 	padding:0;
 }*/
 
+@font-face {
+  font-family: 'Product Sans';
+  /*font-style: normal;
+  font-weight: 400;*/
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
 $colorDeFondo:  #f6f7d4;
 $amarilloOscuro: #f7f1be;
 $azul: #4f8a8b;
