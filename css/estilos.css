@@ -107,19 +107,6 @@ h3 {
   grid-area: parrafo;
   justify-self: left; }
 
-/*GRID PASOS DE FABRICACION*/
-.grid2 {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 7rem;
-  margin-top: 7rem;
-  justify-content: space-evenly; }
-
-.grid2 div {
-  width: 400px;
-  height: 400px; }
-
 /*GRID QUIENES SOMOS*/
 .grid3 {
   padding-top: 3rem;
@@ -147,38 +134,54 @@ h3 {
   justify-self: start; }
 
 /*ANIMACION*/
-/*
-.animacion{
-   animation-duration: 2s;
-   animation-name: aparecer;
-   animation-timing-function: ease-in;
-}
-@keyframes aparecer {
-   0% {
-     opacity: 0.5;
-   }
-   50%{
-   	width: 90%;
-   }
-   100% {
-     opacity: 1;
-   }
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.9s ease-out alternate backwards;
+  animation: scale-in-center 0.9s ease-out alternate backwards; }
 
-}
-  */
-.animacion2:hover {
-  animation-duration: 2s;
-  animation-name: mover;
-  animation-timing-function: ease-in; }
-
-@keyframes mover {
+@-webkit-keyframes scale-in-center {
   0% {
-    opacity: 0.5; }
-  50% {
-    transform: rotate(10deg); }
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+/*Animacion tipos de birra*/
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
   100% {
     opacity: 1; } }
 
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+/*FIN --- Animacion tipos de birra*/
 .bFondo {
   background-color: #f7f1be; }
 
