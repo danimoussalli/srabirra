@@ -79,6 +79,29 @@ label{
 }
 
 
+.quienes-image {
+  /*background-image: url(img/fondoMadera.jpg);*/
+  background-color: $amarilloOscuro;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.quienes-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.colorFondo{
+	background-color: $amarilloOscuro;
+	width: 100vw;
+}
 a{
 	text-decoration: none; 
 	color: $naranja;
@@ -402,9 +425,8 @@ border-radius: 20px 10px 0px 0px;
 
 /*------ TIPOS DE BIRRA*/
 .section__contenedor--tamanio{
-	width: 70vw;
-    margin: 0 auto;
-    padding-bottom: 1rem;
+	margin: 0% auto;
+    padding-bottom: 2rem;
     padding-top: 2rem;
 }
 
@@ -412,10 +434,12 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 10rem;
 	text-align: center;
 	color: $naranja;
+	width: 70vw;
+	margin: 0 auto;
 }
 
 
-/*hacer responsive*/
+
 .h2__texto--chico{
 		font-size: 8rem;
 		text-align: center;
@@ -432,6 +456,8 @@ border-radius: 20px 10px 0px 0px;
 	color: $azul;
 	font-size: 2.5rem;
 	text-align: justify;
+	width: 70vw;
+	margin: 0 auto;
 }
 
 .card__texto{
@@ -506,14 +532,13 @@ border-radius: 20px 10px 0px 0px;
 
 }
 .imagen__tienda{
-	width: 50%;
+	width: 70%;
 }
 
 /*FIN TIENDA*/
 
 /*------ TIPOS DE BIRRA*/
 .section__contenedor--tamanio{
-	width: 70vw;
     margin: 0 auto;
     padding-bottom: 1rem;
     padding-top: 2rem;
@@ -523,6 +548,8 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 8rem;
 	text-align: center;
 	color: $naranja;
+	width: 70vw;
+	margin: 0 auto;
 }
 
 .h2__texto--sombra{
@@ -533,6 +560,8 @@ border-radius: 20px 10px 0px 0px;
 	color: $azul;
 	font-size: 2rem;
 	text-align: justify;
+	width: 70vw;
+	margin: 0 auto;
 }
 
 .card__texto{
@@ -598,7 +627,6 @@ border-radius: 20px 10px 0px 0px;
 
 /*------ TIPOS DE BIRRA*/
 .section__contenedor--tamanio{
-	width: 70vw;
     margin: 0 auto;
     padding-bottom: 1rem;
     padding-top: 2rem;
@@ -608,6 +636,8 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 6rem;
 	text-align: center;
 	color: $naranja;
+	width: 70vw;
+	margin: 0 auto;
 }
 /*
 .h2__texto--sombra{
@@ -619,6 +649,8 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 2rem;
 	text-align: justify;
 	padding-bottom: 1rem;
+	width: 70vw;
+	margin: 0 auto;
 }
 
 .card__texto{
@@ -676,7 +708,6 @@ border-radius: 20px 10px 0px 0px;
 
 /*------ TIPOS DE BIRRA*/
 .section__contenedor--tamanio{
-	width: 70vw;
     margin: 0 auto;
     padding-bottom: 1rem;
     padding-top: 2rem;
@@ -686,6 +717,8 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 4rem;
 	text-align: center;
 	color: $naranja;
+	width: 70vw;
+	margin: 0 auto;
 }
 
 .p__texto{
@@ -693,6 +726,8 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 1.8rem;
 	text-align: justify;
 	padding-bottom: 1rem;
+	width: 70vw;
+	margin: 0 auto;
 }
 
 .card__texto{
@@ -718,7 +753,6 @@ border-radius: 20px 10px 0px 0px;
 
 /*------ TIPOS DE BIRRA*/
 .section__contenedor--tamanio{
-	width: 70vw;
     margin: 0 auto;
     padding-bottom: 1rem;
     padding-top: 2rem;
@@ -728,6 +762,8 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 3rem;
 	text-align: center;
 	color: $naranja;
+	width: 70vw;
+	margin: 0 auto;
 }
 
 .p__texto{
@@ -735,6 +771,8 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 1.2rem;
 	text-align: justify;
 	padding-bottom: 1rem;
+	width: 70vw;
+	margin: 0 auto;
 }
 
 .card__texto{
