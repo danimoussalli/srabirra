@@ -40,6 +40,13 @@ nav ul li{
 
 }
 
+label{
+ font-size: 1rem;
+}
+
+.form-group{
+	margin-top: 1rem;
+}
 .navbar-light{
 	background-color: $colorDeFondo !important;
 }
@@ -109,11 +116,6 @@ h3{
 
 
 
-
-
-
-
-
 /*INDEX SECTION 1*/
 .seccion1 {
 	display: flex;
@@ -131,45 +133,6 @@ h3{
 .seccion1 img{
 	height: 400px;
 }
-
-
-
-
-
-/*GRID MAPA*/
-
-.grid{
-   	display: grid;
-   	padding-top: 3rem;
-	justify-content:center;
-	height: 500px;
-	grid-template-areas: 
-		"mapa titulo"
-		"mapa parrafo";	
-	grid-template-rows: 15% 40%;
-   	grid-template-columns: 45% 40%;
-}
-/*
-#gridIframe{
-  grid-area: mapa;
-  justify-self: right; 
- }*/
-
-
-#gridH1{
-  grid-area: titulo;
-  	justify-self: left; 
- }
-
-
-
-#gridP{
-  grid-area: parrafo;
-  justify-self:left; 
- }
-
-
-
 
 
 
@@ -451,6 +414,16 @@ border-radius: 20px 10px 0px 0px;
 	color: $naranja;
 }
 
+
+/*hacer responsive*/
+.h2__texto--chico{
+		font-size: 8rem;
+		text-align: center;
+		color: $azul;
+		padding-bottom: 1rem;
+}
+
+
 .h2__texto--sombra{
 	text-shadow: 2px 2px 5px #CECECE;
 }
@@ -474,8 +447,13 @@ border-radius: 20px 10px 0px 0px;
 
 /*------ FIN TIPOS DE BIRRA*/
 
+/*MAPA*/
+.mapa{
+	width: 600px;
+	height: 450px;
+	margin:0 auto;
 
-
+}
 
 
 }
@@ -528,7 +506,7 @@ border-radius: 20px 10px 0px 0px;
 
 }
 .imagen__tienda{
-	width: 70%;
+	width: 50%;
 }
 
 /*FIN TIENDA*/
@@ -567,7 +545,10 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 2.5rem;
 }
 
- }
+
+
+
+}
 
 
 
@@ -725,7 +706,7 @@ border-radius: 20px 10px 0px 0px;
 }
 
 
- }
+}
 
 
 
@@ -765,5 +746,7 @@ border-radius: 20px 10px 0px 0px;
 	color: $marron;
 	font-size: 1.8rem;
 }
+
+
 
 }

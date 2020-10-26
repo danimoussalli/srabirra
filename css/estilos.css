@@ -22,6 +22,12 @@ nav ul li {
   font-size: 2rem;
   margin-right: 5rem; }
 
+label {
+  font-size: 1rem; }
+
+.form-group {
+  margin-top: 1rem; }
+
 .navbar-light {
   background-color: #f6f7d4 !important; }
 
@@ -83,29 +89,6 @@ h3 {
 
 .seccion1 img {
   height: 400px; }
-
-/*GRID MAPA*/
-.grid {
-  display: grid;
-  padding-top: 3rem;
-  justify-content: center;
-  height: 500px;
-  grid-template-areas: "mapa titulo" "mapa parrafo";
-  grid-template-rows: 15% 40%;
-  grid-template-columns: 45% 40%; }
-
-/*
-#gridIframe{
-  grid-area: mapa;
-  justify-self: right; 
- }*/
-#gridH1 {
-  grid-area: titulo;
-  justify-self: left; }
-
-#gridP {
-  grid-area: parrafo;
-  justify-self: left; }
 
 /*GRID QUIENES SOMOS*/
 .grid3 {
@@ -307,6 +290,12 @@ h3 {
     font-size: 10rem;
     text-align: center;
     color: #Fbd46d; }
+  /*hacer responsive*/
+  .h2__texto--chico {
+    font-size: 8rem;
+    text-align: center;
+    color: #4f8a8b;
+    padding-bottom: 1rem; }
   .h2__texto--sombra {
     text-shadow: 2px 2px 5px #CECECE; }
   .p__texto {
@@ -319,7 +308,12 @@ h3 {
   .card__h2--marron {
     color: #8a6606;
     font-size: 3rem; }
-  /*------ FIN TIPOS DE BIRRA*/ }
+  /*------ FIN TIPOS DE BIRRA*/
+  /*MAPA*/
+  .mapa {
+    width: 600px;
+    height: 450px;
+    margin: 0 auto; } }
 
 /*---- FIN 1200px and up)----------------------------*/
 /*Large devices (desktops, 992px and up)*/
@@ -353,7 +347,7 @@ h3 {
     font-size: 2rem;
     color: #222831; }
   .imagen__tienda {
-    width: 70%; }
+    width: 50%; }
   /*FIN TIENDA*/
   /*------ TIPOS DE BIRRA*/
   .section__contenedor--tamanio {
