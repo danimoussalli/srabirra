@@ -15,8 +15,9 @@ $amarilloOscuro: #f7f1be;
 $azul: #4f8a8b;
 $azulOscuro:#222831;
 $marron: #8a6606;
-$naranja:#Fbd46d;
-$naranjaHover: #fdb90f;
+$naranja:#fdb90f;
+$naranjaHover:#Fbd46d;
+
 
 html{
 		font-size: 62.5%;
@@ -44,6 +45,12 @@ label{
  font-size: 1rem;
 }
 
+footer{
+	background-color: $amarilloOscuro;
+	margin-bottom: 0rem;
+
+}
+
 .form-group{
 	margin-top: 1rem;
 }
@@ -57,7 +64,7 @@ label{
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-   color: $naranjaHover;
+   color: $naranja;
    font-weight: bold;
 
 }
@@ -79,17 +86,17 @@ label{
 }
 
 
-.quienes-image {
-  /*background-image: url(img/fondoMadera.jpg);*/
+.banner-image {
+  background-image: url(img/fondo.jpg);
   background-color: $amarilloOscuro;
-  height: 500px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.quienes-text {
+.banner-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -194,6 +201,20 @@ h3{
 	grid-area:parrafo;
 	justify-self: start; 
 }
+/*VER
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.opacidad:hover .image {
+  opacity: 0.9;
+}*/
 
 
 
@@ -201,36 +222,6 @@ h3{
 
 /*ANIMACION*/
 
-.scale-in-center {
-	-webkit-animation: scale-in-center 0.9s ease-out alternate backwards;
-	        animation: scale-in-center 0.9s ease-out alternate backwards;
-}
-
-
-@-webkit-keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
 
 
 /*Animacion tipos de birra*/
@@ -324,7 +315,7 @@ border-radius: 20px 10px 0px 0px;
  .footer__contenedor--newsletter{
 	text-align: center;
 	margin-bottom: 1rem;
-	margin-top: 1.5rem;
+	padding-top: 3rem;
 }
 
 .footer__contenedor--newsletter p{
@@ -353,6 +344,10 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 2rem;
 	margin-right: 5rem;
 	display: inline;
+}
+
+.footer__contenedor--redes{
+	padding-bottom: 2rem;
 }
 
 .fab{

@@ -25,6 +25,10 @@ nav ul li {
 label {
   font-size: 1rem; }
 
+footer {
+  background-color: #f7f1be;
+  margin-bottom: 0rem; }
+
 .form-group {
   margin-top: 1rem; }
 
@@ -32,32 +36,32 @@ label {
   background-color: #f6f7d4 !important; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #Fbd46d; }
+  color: #fdb90f; }
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   color: #fdb90f;
   font-weight: bold; }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: #fdb90f; }
+  color: #Fbd46d; }
 
 .navbar-light .navbar-toggler {
-  color: #Fbd46d;
-  border-color: #Fbd46d; }
+  color: #fdb90f;
+  border-color: #fdb90f; }
 
 .espacio {
   padding-right: 5rem; }
 
-.quienes-image {
-  /*background-image: url(img/fondoMadera.jpg);*/
+.banner-image {
+  background-image: url(img/fondo.jpg);
   background-color: #f7f1be;
-  height: 500px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
 
-.quienes-text {
+.banner-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -71,10 +75,10 @@ label {
 
 a {
   text-decoration: none;
-  color: #Fbd46d; }
+  color: #fdb90f; }
 
 nav ul li a:hover {
-  color: #fdb90f;
+  color: #Fbd46d;
   text-decoration: none; }
 
 h1 {
@@ -137,31 +141,21 @@ h3 {
   grid-area: parrafo;
   justify-self: start; }
 
+/*VER
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.opacidad:hover .image {
+  opacity: 0.9;
+}*/
 /*ANIMACION*/
-.scale-in-center {
-  -webkit-animation: scale-in-center 0.9s ease-out alternate backwards;
-  animation: scale-in-center 0.9s ease-out alternate backwards; }
-
-@-webkit-keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 1; }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1; } }
-
-@keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 1; }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1; } }
-
 /*Animacion tipos de birra*/
 .tracking-in-expand {
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -228,7 +222,7 @@ h3 {
 .footer__contenedor--newsletter {
   text-align: center;
   margin-bottom: 1rem;
-  margin-top: 1.5rem; }
+  padding-top: 3rem; }
 
 .footer__contenedor--newsletter p {
   font-size: 1.5rem;
@@ -253,6 +247,9 @@ h3 {
   font-size: 2rem;
   margin-right: 5rem;
   display: inline; }
+
+.footer__contenedor--redes {
+  padding-bottom: 2rem; }
 
 .fab {
   color: #4f8a8b; }
@@ -309,7 +306,7 @@ h3 {
   .h2__texto {
     font-size: 10rem;
     text-align: center;
-    color: #Fbd46d;
+    color: #fdb90f;
     width: 70vw;
     margin: 0 auto; }
   .h2__texto--chico {
@@ -380,7 +377,7 @@ h3 {
   .h2__texto {
     font-size: 8rem;
     text-align: center;
-    color: #Fbd46d;
+    color: #fdb90f;
     width: 70vw;
     margin: 0 auto; }
   .h2__texto--sombra {
@@ -433,7 +430,7 @@ h3 {
   .h2__texto {
     font-size: 6rem;
     text-align: center;
-    color: #Fbd46d;
+    color: #fdb90f;
     width: 70vw;
     margin: 0 auto; }
   /*
@@ -488,7 +485,7 @@ h3 {
   .h2__texto {
     font-size: 4rem;
     text-align: center;
-    color: #Fbd46d;
+    color: #fdb90f;
     width: 70vw;
     margin: 0 auto; }
   .p__texto {
@@ -514,7 +511,7 @@ h3 {
   .h2__texto {
     font-size: 3rem;
     text-align: center;
-    color: #Fbd46d;
+    color: #fdb90f;
     width: 70vw;
     margin: 0 auto; }
   .p__texto {
