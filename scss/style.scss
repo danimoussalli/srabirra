@@ -227,7 +227,9 @@ h3{
 
 /*ANIMACION*/
 
-
+.index__margen{
+	margin-bottom: 3rem;
+}
 
 /*Animacion tipos de birra*/
 .tracking-in-expand {
@@ -300,6 +302,7 @@ h3{
 	box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.16);
 }
 
+
 .card img{
 border-radius: 20px 10px 0px 0px;
 }
@@ -309,6 +312,16 @@ border-radius: 20px 10px 0px 0px;
 		font-size: 2rem;
 }
 /*FIN - CARD - TIPOS DE BIRRA*/
+
+.card__index{
+	border: none;
+	background-color: $colorDeFondo;
+	border-radius: none;
+	box-shadow: none;
+
+
+}
+
 
 
 /*------ FOOTER*/
@@ -652,7 +665,7 @@ border-radius: 20px 10px 0px 0px;
 .p__texto{
 	color: $azul;
 	font-size: 2.8rem;
-	text-align: justify;
+	/*text-align: justify;*/
 	padding-bottom: 1rem;
 	width: 70vw;
 	margin: 0 auto;
@@ -729,7 +742,7 @@ border-radius: 20px 10px 0px 0px;
 .p__texto{
 	color: $azul;
 	font-size: 2.5rem;
-	text-align: justify;
+	/*text-align: justify;*/
 	padding-bottom: 1rem;
 	width: 70vw;
 	margin: 0 auto;
@@ -764,7 +777,7 @@ border-radius: 20px 10px 0px 0px;
 }
 
 .h2__texto{
-	font-size: 3rem;
+	font-size: 3.2rem;
 	text-align: center;
 	color: $naranja;
 	width: 70vw;
@@ -774,7 +787,7 @@ border-radius: 20px 10px 0px 0px;
 .p__texto{
 	color: $azul;
 	font-size: 2.3rem;
-	text-align: justify;
+	/*text-align: justify;*/
 	padding-bottom: 1rem;
 	width: 70vw;
 	margin: 0 auto;
