@@ -270,25 +270,12 @@ border-radius: 20px 10px 0px 0px;
 /* ---- Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   /*TIENDA*/
-  .agregarAlCarrito {
-    text-decoration: none;
-    padding: 10px;
-    color: #ffffff;
-    background-color: #4f8a8b;
-    border-radius: 1px;
-    border: 2px solid #4f8a8b; }
-  .tiendaFlex {
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    width: 80%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    justify-content: space-evenly; }
-  .tiendaFlex div {
-    margin: 15px; }
-  .tiendaFlex div h3 {
-    margin-top: 15px; }
+  .inner {
+    overflow: hidden; }
+  .inner img {
+    transition: all 1.5s ease; }
+  .inner:hover img {
+    transform: scale(1.5); }
   /*FIN TIENDA*/
   /*------ TIPOS DE BIRRA*/
   .section__contenedor--tamanio {
@@ -301,10 +288,11 @@ border-radius: 20px 10px 0px 0px;
     width: 70vw;
     margin: 0 auto; }
   .h2__texto--chico {
-    font-size: 8rem;
+    font-size: 5rem;
     text-align: center;
     color: #4f8a8b;
-    padding-bottom: 1rem; }
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
   .h2__texto--sombraLeve {
     text-shadow: 2px -1px 4px rgba(253, 253, 253, 0.3); }
   .h2__texto--sombra {
@@ -333,35 +321,12 @@ border-radius: 20px 10px 0px 0px;
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /*TIENDA*/
-  .agregarAlCarrito {
-    text-decoration: none;
-    padding: 10px;
-    color: #ffffff;
-    background-color: #4f8a8b;
-    border-radius: 1px;
-    border: 2px solid #4f8a8b;
-    width: 70%; }
-  .tiendaFlex {
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    justify-content: center; }
-  .tiendaFlex div {
-    margin: 15px; }
-  .tiendaFlex div h3 {
-    margin-top: 15px;
-    font-size: 2.3rem;
-    color: #564827; }
-  .tiendaFlex div h2 {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    font-size: 2rem;
-    color: #222831; }
-  .imagen__tienda {
-    width: 70%; }
+  .inner {
+    overflow: hidden; }
+  .inner img {
+    transition: all 1.5s ease; }
+  .inner:hover img {
+    transform: scale(1.5); }
   /*FIN TIENDA*/
   /*------ TIPOS DE BIRRA*/
   .section__contenedor--tamanio {
@@ -387,34 +352,23 @@ border-radius: 20px 10px 0px 0px;
     font-size: 2rem; }
   .card__h2--marron {
     color: #564827;
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .h2__texto--chico {
+    font-size: 4.8rem;
+    text-align: center;
+    color: #4f8a8b;
+    margin-bottom: 3rem;
+    margin-top: 3rem; } }
 
 /*---- Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   /*TIENDA*/
-  .agregarAlCarrito {
-    text-decoration: none;
-    padding: 10px;
-    color: #ffffff;
-    background-color: #4f8a8b;
-    border-radius: 1px;
-    border: 2px solid #4f8a8b; }
-  .tiendaFlex {
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    justify-content: space-evenly;
-    align-items: center; }
-  .tiendaFlex div {
-    margin: 15px; }
-  .tiendaFlex div h3 {
-    margin-top: 15px;
-    font-size: 2rem; }
-  .imagen__tienda {
-    width: 70%; }
+  .inner {
+    overflow: hidden; }
+  .inner img {
+    transition: all 1.5s ease; }
+  .inner:hover img {
+    transform: scale(1.5); }
   /*FIN TIENDA*/
   /*------ TIPOS DE BIRRA*/
   .section__contenedor--tamanio {
@@ -443,34 +397,16 @@ border-radius: 20px 10px 0px 0px;
     font-size: 1.8rem; }
   .card__h2--marron {
     color: #564827;
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .h2__texto--chico {
+    font-size: 4.8rem;
+    text-align: center;
+    color: #4f8a8b;
+    margin-bottom: 3rem;
+    margin-top: 3rem; } }
 
 /*----- Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /*TIENDA*/
-  .agregarAlCarrito {
-    text-decoration: none;
-    padding: 10px;
-    color: #ffffff;
-    background-color: #4f8a8b;
-    border-radius: 1px;
-    border: 2px solid #4f8a8b; }
-  .tiendaFlex {
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    width: 80%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    justify-content: space-evenly; }
-  .tiendaFlex div {
-    margin: 15px; }
-  .tiendaFlex div h3 {
-    margin-top: 15px;
-    font-size: 1rem; }
-  .imagen__tienda {
-    width: 80%; }
-  /*FIN TIENDA*/
   /*------ TIPOS DE BIRRA*/
   .section__contenedor--tamanio {
     margin: 0 auto;
@@ -494,7 +430,13 @@ border-radius: 20px 10px 0px 0px;
     font-size: 1.8rem; }
   .card__h2--marron {
     color: #564827;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .h2__texto--chico {
+    font-size: 4.5rem;
+    text-align: center;
+    color: #4f8a8b;
+    margin-bottom: 3rem;
+    margin-top: 3rem; } }
 
 @media (max-width: 575.98px) {
   /*------ TIPOS DE BIRRA*/
@@ -520,4 +462,10 @@ border-radius: 20px 10px 0px 0px;
     font-size: 1.8rem; }
   .card__h2--marron {
     color: #564827;
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .h2__texto--chico {
+    font-size: 4.5rem;
+    text-align: center;
+    color: #4f8a8b;
+    margin-bottom: 3rem;
+    margin-top: 3rem; } }

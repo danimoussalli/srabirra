@@ -369,34 +369,17 @@ border-radius: 20px 10px 0px 0px;
 @media (min-width: 1200px) { 
 
 /*TIENDA*/
-.agregarAlCarrito{
-    text-decoration: none;
-    padding: 10px;
-    color: #ffffff;
-    background-color: $azul;
-    border-radius: 1px;
-    border: 2px solid $azul;
+.inner{
+	overflow: hidden;
 }
 
-.tiendaFlex{
-	margin:0 auto;
-	display: flex;
-	flex-flow: row wrap ;
-	width:80%;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	justify-content: space-evenly	;
+.inner img{
+	transition: all 1.5s ease;
 }
 
-.tiendaFlex div {
-	margin: 15px;
 
-}
-
-.tiendaFlex div h3{
-	margin-top: 15px
-
-
+.inner:hover img{
+	transform: scale(1.5);
 }
 /*FIN TIENDA*/
 
@@ -418,10 +401,11 @@ border-radius: 20px 10px 0px 0px;
 
 
 .h2__texto--chico{
-		font-size: 8rem;
+		font-size: 5rem;
 		text-align: center;
 		color: $azul;
-		padding-bottom: 1rem;
+		margin-bottom: 3rem;
+		margin-top:  3rem;
 }
 
 
@@ -474,50 +458,18 @@ border-radius: 20px 10px 0px 0px;
 @media (min-width: 992px) and (max-width: 1199.98px){ 
 /*TIENDA*/
 
-.agregarAlCarrito{
-    text-decoration: none;
-    padding: 10px;
-    color: #ffffff;
-    background-color: $azul;
-    border-radius: 1px;
-    border: 2px solid $azul;
-    width: 70%;
-
+.inner{
+	overflow: hidden;
 }
 
-.tiendaFlex{
-	margin:0 auto;
-	display: flex;
-	flex-flow: row wrap ;
-	width:100%;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	justify-content: center	;
+.inner img{
+	transition: all 1.5s ease;
 }
 
-.tiendaFlex div {
-	margin: 15px;
 
+.inner:hover img{
+	transform: scale(1.5);
 }
-
-.tiendaFlex div h3{
-	margin-top: 15px;
-	font-size: 2.3rem;
-	color: $marron;
-
-}
-
-.tiendaFlex div h2{
-	margin-top: 3%;
-	margin-bottom: 3%;
-	font-size: 2rem;
-	color: $azulOscuro;
-
-}
-.imagen__tienda{
-	width: 70%;
-}
-
 /*FIN TIENDA*/
 
 /*------ TIPOS DE BIRRA*/
@@ -557,6 +509,14 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 2.5rem;
 }
 
+.h2__texto--chico{
+		font-size: 4.8rem;
+		text-align: center;
+		color: $azul;
+		margin-bottom: 3rem;
+		margin-top:  3rem;
+}
+
 
 
 
@@ -568,45 +528,21 @@ border-radius: 20px 10px 0px 0px;
 /*---- Medium devices (tablets, 768px and up)*/
  @media (min-width: 768px) and (max-width: 991.98px) { 
 /*TIENDA*/
-
-.agregarAlCarrito{
-    text-decoration: none;
-    padding: 10px;
-    color: #ffffff;
-    background-color: $azul;
-    border-radius: 1px;
-    border: 2px solid $azul;
-
+.inner{
+	overflow: hidden;
 }
 
-.tiendaFlex{
-	margin:0 auto;
-	display: flex;
-	flex-flow: row wrap ;
-	width:100%;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	justify-content: space-evenly;
-	align-items: center;
-
+.inner img{
+	transition: all 1.5s ease;
 }
 
-.tiendaFlex div {
-	margin: 15px;
 
+.inner:hover img{
+	transform: scale(1.5);
 }
-
-.tiendaFlex div h3{
-	margin-top: 15px;
-	font-size: 2rem;
-
-}
-
-.imagen__tienda{
-	width: 70%;
-}
-
 /*FIN TIENDA*/
+
+
 
 /*------ TIPOS DE BIRRA*/
 .section__contenedor--tamanio{
@@ -646,48 +582,22 @@ border-radius: 20px 10px 0px 0px;
 	font-size: 2.5rem;
 }
 
+
+.h2__texto--chico{
+		font-size: 4.8rem;
+		text-align: center;
+		color: $azul;
+		margin-bottom: 3rem;
+		margin-top:  3rem;
+}
+
+
+
  }
 
 
  /*----- Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
-/*TIENDA*/
-
-.agregarAlCarrito{
-    text-decoration: none;
-    padding: 10px;
-    color: #ffffff;
-    background-color: $azul;
-    border-radius: 1px;
-    border: 2px solid $azul;
-
-}
-
-.tiendaFlex{
-	margin:0 auto;
-	display: flex;
-	flex-flow: row wrap ;
-	width:80%;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	justify-content: space-evenly	;
-}
-
-.tiendaFlex div {
-	margin: 15px;
-
-}
-
-.tiendaFlex div h3{
-	margin-top: 15px;
-	font-size: 1rem;
-
-}
-
-.imagen__tienda{
-	width: 80%;
-}
-/*FIN TIENDA*/
 
 /*------ TIPOS DE BIRRA*/
 .section__contenedor--tamanio{
@@ -722,6 +632,16 @@ border-radius: 20px 10px 0px 0px;
 	color: $marron;
 	font-size: 2rem;
 }
+
+
+.h2__texto--chico{
+		font-size: 4.5rem;
+		text-align: center;
+		color: $azul;
+		margin-bottom: 3rem;
+		margin-top:  3rem;
+}
+
 
 
 }
@@ -769,5 +689,16 @@ border-radius: 20px 10px 0px 0px;
 }
 
 
+.h2__texto--chico{
+		font-size: 4.5rem;
+		text-align: center;
+		color: $azul;
+		margin-bottom: 3rem;
+		margin-top:  3rem;
+}
+
+
+
 
 }
+
