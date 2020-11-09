@@ -25,6 +25,9 @@ footer {
   background-color: #f7f1be;
   margin-bottom: 0rem; }
 
+iframe {
+  width: 80wv; }
+
 .form-group {
   margin-top: 1rem; }
 
@@ -98,42 +101,11 @@ nav ul li a:hover {
 h1 {
   font-size: 4rem; }
 
-/*ver despues
-p{
-	font-size: 3rem;
-}
-
-.colorSubtitulos{
-	color: $azulOscuro;
-}
-
-
-*/
 h3 {
   font-size: 2rem;
   margin-top: 0;
   margin-bottom: 0; }
 
-/*INDEX SECTION 1
-.seccion1 {
-	display: flex;
-	flex-direction: row;
-	width: 1045px;
-	height: 500px;
-	margin: 0 auto;
-	padding-top: 20px;
-}
-
-.seccionDiv{
-	margin-left: 40px;
-}
-
-.seccion1 img{
-	height: 400px;
-}
-
-*/
-/*ANIMACION*/
 .index__margen {
   margin-bottom: 3rem; }
 
@@ -161,6 +133,13 @@ h3 {
     opacity: 1; } }
 
 /*FIN --- Animacion tipos de birra*/
+.form--margen {
+  padding-bottom: 3rem; }
+
+.form__contacto--centrar {
+  width: 70vw;
+  margin: 0 auto; }
+
 .bFondo {
   background-color: #f7f1be; }
 
@@ -184,15 +163,10 @@ h3 {
 .card {
   border: none;
   background-color: #f7f1be;
-  /*border-radius: 20px 10px;*/
   -webkit-box-shadow: 10px 10px 35px -10px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 10px 10px 35px -10px rgba(0, 0, 0, 0.16);
   box-shadow: 10px 10px 35px -10px rgba(0, 0, 0, 0.16); }
 
-/*.card img{
-border-radius: 20px 10px 0px 0px;
-}
-*/
 .card-text {
   font-size: 2rem; }
 
@@ -217,7 +191,7 @@ border-radius: 20px 10px 0px 0px;
   padding-top: 3rem; }
 
 .footer__contenedor--newsletter p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #4f8a8b; }
 
 .footer__contenedor--newsletter h3 {
@@ -243,11 +217,17 @@ border-radius: 20px 10px 0px 0px;
 .footer__contenedor--redes {
   padding-bottom: 2rem; }
 
+.footer__contenedor--redesDos {
+  padding-top: 3rem; }
+
 .fab {
   color: #4f8a8b; }
 
 .footer__contenedor--flex a:hover {
   color: #6f8a8b; }
+
+footer__contenedor--margen {
+  padding-top: 1rem; }
 
 /*CAMBIO DE COLOR Boton Suscribirse*/
 .footer__contenedor--newsletter button:hover {
@@ -260,7 +240,7 @@ border-radius: 20px 10px 0px 0px;
   background-color: #0000;
   border-radius: 1px;
   border: 2px solid #4f8a8b;
-  font-size: 1.8rem; }
+  font-size: 2.3rem; }
 
 .bFuente {
   font-family: 'Product Sans', sans-serif;
@@ -293,6 +273,12 @@ border-radius: 20px 10px 0px 0px;
     color: #4f8a8b;
     margin-bottom: 3rem;
     margin-top: 3rem; }
+  .h2__texto--chicoNaranja {
+    font-size: 5rem;
+    color: #fdb90f;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center; }
   .h2__texto--sombraLeve {
     text-shadow: 2px -1px 4px rgba(253, 253, 253, 0.3); }
   .h2__texto--sombra {
@@ -313,7 +299,7 @@ border-radius: 20px 10px 0px 0px;
   /*------ FIN TIPOS DE BIRRA*/
   /*MAPA*/
   .mapa {
-    width: 600px;
+    width: 900px;
     height: 450px;
     margin: 0 auto; } }
 
@@ -358,7 +344,18 @@ border-radius: 20px 10px 0px 0px;
     text-align: center;
     color: #4f8a8b;
     margin-bottom: 3rem;
-    margin-top: 3rem; } }
+    margin-top: 3rem; }
+  .h2__texto--chicoNaranja {
+    font-size: 4.8rem;
+    color: #fdb90f;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center; }
+  /*MAPA*/
+  .mapa {
+    width: 900px;
+    height: 450px;
+    margin: 0 auto; } }
 
 /*---- Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -381,14 +378,9 @@ border-radius: 20px 10px 0px 0px;
     color: #fdb90f;
     width: 70vw;
     margin: 0 auto; }
-  /*
-.h2__texto--sombra{
-	text-shadow: 2px 2px 5px #CECECE;
-}*/
   .p__texto {
     color: #4f8a8b;
     font-size: 2.8rem;
-    /*text-align: justify;*/
     padding-bottom: 1rem;
     width: 70vw;
     margin: 0 auto; }
@@ -403,7 +395,18 @@ border-radius: 20px 10px 0px 0px;
     text-align: center;
     color: #4f8a8b;
     margin-bottom: 3rem;
-    margin-top: 3rem; } }
+    margin-top: 3rem; }
+  .h2__texto--chicoNaranja {
+    font-size: 4.8rem;
+    color: #fdb90f;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center; }
+  /*MAPA*/
+  .mapa {
+    width: 700px;
+    height: 450px;
+    margin: 0 auto; } }
 
 /*----- Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -436,7 +439,18 @@ border-radius: 20px 10px 0px 0px;
     text-align: center;
     color: #4f8a8b;
     margin-bottom: 3rem;
-    margin-top: 3rem; } }
+    margin-top: 3rem; }
+  .h2__texto--chicoNaranja {
+    font-size: 4.5rem;
+    color: #fdb90f;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center; }
+  /*MAPA*/
+  .mapa {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto; } }
 
 @media (max-width: 575.98px) {
   /*------ TIPOS DE BIRRA*/
@@ -468,4 +482,15 @@ border-radius: 20px 10px 0px 0px;
     text-align: center;
     color: #4f8a8b;
     margin-bottom: 3rem;
-    margin-top: 3rem; } }
+    margin-top: 3rem; }
+  .h2__texto--chicoNaranja {
+    font-size: 4.5rem;
+    color: #fdb90f;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center; }
+  /*MAPA*/
+  .mapa {
+    width: 450px;
+    height: 350px;
+    margin: 0 auto; } }

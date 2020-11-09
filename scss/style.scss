@@ -46,6 +46,10 @@ footer{
 
 }
 
+iframe{
+	width: 80wv;
+}
+
 .form-group{
 	margin-top: 1rem;
 }
@@ -139,17 +143,7 @@ nav ul li a:hover{
 h1 {
 	font-size: 4rem;
 }
-/*ver despues
-p{
-	font-size: 3rem;
-}
 
-.colorSubtitulos{
-	color: $azulOscuro;
-}
-
-
-*/
 
 h3{
 	font-size: 2rem;
@@ -159,32 +153,6 @@ h3{
 
 
 
-
-
-
-/*INDEX SECTION 1
-.seccion1 {
-	display: flex;
-	flex-direction: row;
-	width: 1045px;
-	height: 500px;
-	margin: 0 auto;
-	padding-top: 20px;
-}
-
-.seccionDiv{
-	margin-left: 40px;
-}
-
-.seccion1 img{
-	height: 400px;
-}
-
-*/
-
-
-
-/*ANIMACION*/
 
 .index__margen{
 	margin-bottom: 3rem;
@@ -223,7 +191,14 @@ h3{
 
 /*FIN --- Animacion tipos de birra*/
 
+.form--margen{
+	padding-bottom: 3rem;
+}
 
+.form__contacto--centrar{
+	width: 70vw;
+	margin: 0 auto;
+}
 
 
 .bFondo{
@@ -255,17 +230,11 @@ h3{
 .card{
 	border: none;
 	background-color: $amarilloOscuro;
-	/*border-radius: 20px 10px;*/
 	-webkit-box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.16);
 	-moz-box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.16);
 	box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.16);
 }
 
-
-/*.card img{
-border-radius: 20px 10px 0px 0px;
-}
-*/
 
 .card-text{
 		font-size: 2rem;
@@ -302,7 +271,7 @@ border-radius: 20px 10px 0px 0px;
 }
 
 .footer__contenedor--newsletter p{
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	color: $azul;
 }
 .footer__contenedor--newsletter h3{
@@ -333,6 +302,11 @@ border-radius: 20px 10px 0px 0px;
 	padding-bottom: 2rem;
 }
 
+.footer__contenedor--redesDos{
+	padding-top: 3rem;
+}
+
+
 .fab{
 	color: $azul;
 
@@ -340,6 +314,10 @@ border-radius: 20px 10px 0px 0px;
 
 .footer__contenedor--flex a:hover{
 	color: #6f8a8b;
+}
+
+footer__contenedor--margen{
+	padding-top: 1rem;
 }
 
 /*CAMBIO DE COLOR Boton Suscribirse*/
@@ -355,7 +333,7 @@ border-radius: 20px 10px 0px 0px;
     background-color: #0000;
     border-radius: 1px;
     border: 2px solid $azul;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
 }
 
 .bFuente{
@@ -408,6 +386,13 @@ border-radius: 20px 10px 0px 0px;
 		margin-top:  3rem;
 }
 
+.h2__texto--chicoNaranja{
+		font-size: 5rem;
+		color: $naranja;
+		margin-bottom: 3rem;
+		margin-top:  3rem;
+		text-align: center;
+}
 
 .h2__texto--sombraLeve{
 	text-shadow: 2px -1px 4px rgba(253,253,253,0.3);
@@ -442,7 +427,7 @@ border-radius: 20px 10px 0px 0px;
 
 /*MAPA*/
 .mapa{
-	width: 600px;
+	width: 900px;
 	height: 450px;
 	margin:0 auto;
 
@@ -517,8 +502,21 @@ border-radius: 20px 10px 0px 0px;
 		margin-top:  3rem;
 }
 
+.h2__texto--chicoNaranja{
+		font-size: 4.8rem;
+		color: $naranja;
+		margin-bottom: 3rem;
+		margin-top:  3rem;
+		text-align: center;
+}
 
+/*MAPA*/
+.mapa{
+	width: 900px;
+	height: 450px;
+	margin:0 auto;
 
+}
 
 }
 
@@ -558,15 +556,10 @@ border-radius: 20px 10px 0px 0px;
 	width: 70vw;
 	margin: 0 auto;
 }
-/*
-.h2__texto--sombra{
-	text-shadow: 2px 2px 5px #CECECE;
-}*/
 
 .p__texto{
 	color: $azul;
 	font-size: 2.8rem;
-	/*text-align: justify;*/
 	padding-bottom: 1rem;
 	width: 70vw;
 	margin: 0 auto;
@@ -591,8 +584,21 @@ border-radius: 20px 10px 0px 0px;
 		margin-top:  3rem;
 }
 
+.h2__texto--chicoNaranja{
+		font-size: 4.8rem;
+		color: $naranja;
+		margin-bottom: 3rem;
+		margin-top:  3rem;
+		text-align: center;
+}
 
+/*MAPA*/
+.mapa{
+	width: 700px;
+	height: 450px;
+	margin:0 auto;
 
+}
  }
 
 
@@ -642,7 +648,21 @@ border-radius: 20px 10px 0px 0px;
 		margin-top:  3rem;
 }
 
+.h2__texto--chicoNaranja{
+		font-size: 4.5rem;
+		color: $naranja;
+		margin-bottom: 3rem;
+		margin-top:  3rem;
+		text-align: center;
+}
 
+/*MAPA*/
+.mapa{
+	width: 500px;
+	height: 400px;
+	margin:0 auto;
+
+}
 
 }
 
@@ -697,8 +717,21 @@ border-radius: 20px 10px 0px 0px;
 		margin-top:  3rem;
 }
 
+.h2__texto--chicoNaranja{
+		font-size: 4.5rem;
+		color: $naranja;
+		margin-bottom: 3rem;
+		margin-top:  3rem;
+		text-align: center;
+}
 
 
+/*MAPA*/
+.mapa{
+	width: 450px;
+	height: 350px;
+	margin:0 auto;
 
+}
 }
 
