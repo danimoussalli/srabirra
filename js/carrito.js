@@ -52,26 +52,3 @@ if (codigo == "PRIMERACOMPRA"){
     alert("El precio total sin descuento es " + totalFinal);
 }
 // FIN CUPON
-
-
-
-
-
-//CREO OBJETO PARA ARMAR CADA PRODUCTO
-function Producto (nombre, precio){
-    this.nombre = nombre;
-    this.precio = precio;
-}
-
-// --- Paso los parametros para crear el objeto 
-const ipa = new Producto ("IPA", 200);
-const bock = new Producto ("Bock", 250);
-const paleAle = new Producto ("Pale Ale", 200);
-console.log(ipa);
-console.log(bock);
-console.log(paleAle);
-// FIN OBJETO
-
-
-
-
