@@ -57,7 +57,7 @@ if (codigo == "PRIMERACOMPRA"){
 
 
 
-//ARMADO DE OBJETO PARA ARMAR CADA PRODUCTO
+//CREO OBJETO PARA ARMAR CADA PRODUCTO
 function Producto (nombre, precio){
     this.nombre = nombre;
     this.precio = precio;
