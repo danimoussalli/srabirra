@@ -10,8 +10,9 @@ class Producto {
 //Array de productos para almacenar objetos
 const productos = [];
 productos.push(new Producto("IPA", "200", "5"));
+productos.push(new Producto("Scotish", "300", "8"));
 productos.push(new Producto("Bock", "250", "10"));
-productos.push(new Producto("Pale Ale", "200", "8"));
+productos.push(new Producto("Pale Ale", "150", "8"));
 console.log(productos);
 
 
