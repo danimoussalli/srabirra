@@ -1,157 +1,132 @@
-//CREO OBJETO PARA ARMAR CADA PRODUCTO
-class Producto {
-  constructor(nombre, precio, stock, imagen) {
-    this.nombre = nombre;
-    this.precio = precio;
-    this.stock = stock;
-    this.imagen = imagen;
+//VOY LLAMANDO A LAS FUNCIONES
+$(document).ready(function () {
+  mostrarProductos();
+  suscribir();
+});
+
+
+let carrito = [];
+let contar = 0;
+let precio = 0;
+
+//Armo mi grilla de productos
+const mostrarProductos = () => {
+  for (const producto of productos) {
+    $("#todosLosProductos").append(`<div class = "col mb-4"> 
+                          <div class = "card">
+                            <div class = "inner">
+                              <img class = "card-img-top" src = ${producto.imagen}> </img>
+                              </div>
+                              <div class ="card-body">
+                              <h2 class  = "card-title card__h2--marron"> ${producto.nombre}</h2>
+                              <p class = "card-text card__texto"> Precio: ${producto.precio} </p>
+                              <button class = "btn btn-info" id="btn${producto.id}">Agregar al Carrito</button> 
+                              </div>                
+                            </div>            
+                          </div>
+                        </div>`);
+    //Boton agregar producto + acciòn de agregado
+    $(`#btn${producto.id}`).on("click", function () {
+      Swal.fire({
+        title: "Agregaste al carrito:",
+        text: `${producto.nombre}`,
+        icon: "success",
+      });
+      //Plantilla del producto agrefado al carrito
+      $("#itemCarrito").prepend(`<div class = "col mb-4"> 
+                            <div class = "card">
+                                <div class ="card-body">
+                                <h2 class  = "card-title card__h2--marron"> ${producto.nombre} </h2>
+                                <p class = "card-text card__texto"> Precio: ${producto.precio} <button class="fas fa-trash btn btn-danger" style="margin-left: 6.4vW;" id="borrarElemento"></button></p>
+                                
+                                </div>                
+                              </div>            
+                            </div>
+                          </div>`);
+
+      //contador de productos 
+      contar = contar +1 ;
+      $("#contadorCarrito").html(`<div class='btn btn-info bInfo bFuente mb-2'>${contar}</div>`);                
+      
+
+      //Local Storage : TERMINAR DE RESOLVER
+      carrito = JSON.parse(localStorage.getItem("carrito"));
+      if (carrito == null){
+          carrito = []
+      }
+      carrito.push(producto);
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+
+
+      $(".esconder").hide();
+      //Calculo precio
+      precio = precio + producto.precio;
+      // CREO LA PARTE DE TOTAL 
+      $("#totalTexto").html(`<h2 id="p1">Total: ${precio}</h2>`);
+      $("#p1").css({  "color": "#4f8a8b", 
+                      "text-align": "left", 
+                      "borderLeft": "3px solid #fdb90f",
+                      "padding-top": "1rem",
+                      "padding-bottom": "1rem",
+                      "padding-left": "1rem"})
+                      .slideUp("fast")
+                      .delay(2000)
+                      .slideDown("slow");
+    });
+ 
   }
-}
 
-//Array de productos para almacenar objetos
-const productos = [];
-productos.push(new Producto("IPA", "200", "5", "img/tienda/ipa.png"));
-productos.push(new Producto("Porter", "300", "8", "img/tienda/porter.png"));
-productos.push(new Producto("Bock", "250", "10", "img/tienda/bock.png"));
-productos.push(new Producto("Pale Ale", "150", "8", "img/tienda/paleale.png"));
-productos.push(new Producto("Pilsener", "190", "2", "img/tienda/pilsener.png"));
-productos.push(new Producto("Stout", "290", "2", "img/tienda/stout.png"));
-console.log(productos);
+};
 
-
-//CREO UNA FUNCION PARA CALCULAR EL VALOR FINAL DE LA COMPRA
-const calcularTotal = function (cantidad, precioUnitario) {
-  let total = cantidad * precioUnitario;
-  return total;
-}
-
-// --- Pido que ingrese los valores de cantidad y precio para poder calcular el valor final
-let cantidad = parseInt(prompt("Ingrese la cantidad"));
-let precioUnitario = parseInt(prompt("Ingrese precio"));
-
-// --- Calculo el valor total a pagar
-let total = calcularTotal(cantidad, precioUnitario);
-alert("El precio a pagar es: " + total);
-
-
-//INGRESO CUPON DE DESCUENTO
-function cuponDescuento(codigo) {
-  codigo = codigo.toLocaleUpperCase();
-  console.log("Codigo Ingresado: " + codigo);
-  if (codigo == "PRIMERACOMPRA") {
-    // calculo el valor final con descuento
-    let calculoDescuento = (total * 10) / 100;
-    let totalConDescuento = total - calculoDescuento;
-    // verifico que este bien hecho el calculo
-    console.log(totalConDescuento);
-    return totalConDescuento;
-  } else {
-    // asigno el valor final sin descuento
-    totalConDescuento = total;
-    return totalConDescuento;
-  }
-}
-let codigo = prompt("Ingrese codigo de descuento");
-// --- Llamo a la funcion
-let totalFinal = cuponDescuento(codigo);
-
-function mostrarMensajeDescuento(totalFinal){
-if (codigo == "PRIMERACOMPRA") {
-  alert("El precio total con descuento es " + totalFinal);
-} else {
-  alert("El precio total sin descuento es " + totalFinal);
-}
-}
-mostrarMensajeDescuento(totalFinal);
-
-
-// CLASE 8 -- CREO CARDS
-let divi = document.createElement("div");
-divi.setAttribute(
-  "class",
-  "row row-cols-1 row-cols-sm-2 row-cols-md-3 card__margen"
-);
-
-for (const producto of productos) {
-  let divCardBase = document.createElement("div");
-  divCardBase.setAttribute("class", "col mb-4");
-
-  let divCard = document.createElement("div");
-  divCard.setAttribute("class", "card");
-  divCardBase.appendChild(divCard);
-
-  //PARTE IMAGEN
-  let divCardInner = document.createElement("div");
-  divCardInner.setAttribute("class", "inner");
-  divCard.appendChild(divCardInner);
-
-  let cardImg = document.createElement("img");
-  cardImg.setAttribute("class", "card-img-top");
-  cardImg.setAttribute("src", producto.imagen);
-  divCardInner.appendChild(cardImg);
-
-  //CREO BODY DE LA CARD
-  let divCardBody = document.createElement("div");
-  divCardBody.setAttribute("class", "card-body");
-  divCard.appendChild(divCardBody);
-
-  //CONTENIDO DE TEXTO DE LA CARD + BOTON
-  let cardNombre = document.createElement("h5");
-  cardNombre.setAttribute("class", "card-title card__h2--marron");
-  cardNombre.innerText = producto.nombre;
-  divCardBody.appendChild(cardNombre);
-
-  let cardPrecio = document.createElement("p");
-  cardPrecio.innerText = `Precio: ${producto.precio}`;
-  cardPrecio.setAttribute("class", "card-text card__texto");
-  divCardBody.appendChild(cardPrecio);
-
-  let cardBoton = document.createElement("button");
-  cardBoton.setAttribute("class", "btn btn-info agregar");
-  cardBoton.innerHTML = "Agregar al carrito";
-  divCardBody.appendChild(cardBoton);
-
-  divi.appendChild(divCardBase);
-}
-
-document.getElementById("llamar").appendChild(divi);
-
-//BOTON AGREGAR
-let botonAgregar = document.getElementsByClassName("agregar");
-for (const agregar of botonAgregar) {
-  /*console.log(agregar.innerHTML);*/
-  agregar.onclick = () => {
-    alert("Producto Agregado");
-  };
-}
-
-//DOM 8
-let nombre = prompt("Ingrese su nombre");
-let manejoNombre = document.getElementById("nombre");
-manejoNombre.setAttribute("class", "p__texto");
-manejoNombre.innerHTML = `<h1> Hola: ${nombre} </h1>
-                        <h2>Ya podes elegir tus cerveza preferida en nuestra tienda</h2>`;
 
 //JSON
 const guardarLocal = (clave, valor) => {
   localStorage.setItem(clave, valor);
 };
+
 guardarLocal("listaDeProductos", JSON.stringify(productos));
-const Productosalmacenados = JSON.parse(
-  localStorage.getItem("listaDeProductos")
-);
+const Productosalmacenados = JSON.parse(localStorage.getItem("listaDeProductos"));
 
 
-/*VISTA DESDE CONSOLA
-for (let i = 0; i < localStorage.length; i++) {
-  let clave = localStorage.key(i);
-  console.log("Clave: " + clave);
-  console.log("Valor: " + localStorage.getItem(clave));
-}
-*/
 
-//Evento de ventana
-window.onload = () => {
-  console.log("Ventana cargada");
-};
+//SUSCRIPCION NEWSLETTER
+//Declaramos la url que vamos a usar para el GET
+const URLPOST   = "https://jsonplaceholder.typicode.com/posts"
+//Declaramos la información a enviar
+const infoPost =  {mail:$("#email").text()};
 
+
+
+const suscribir = () => {
+  $("#formulario").submit(function(e) {
+      //prevenir el comportamiento del submit
+      e.preventDefault();
+    
+      $("#enviar").click(() => {
+        $.ajax({
+            method: "POST",
+            url: URLPOST,
+            data: infoPost,
+            success: function(respuesta) {
+              if ($("#email").val().length != 0) {
+                Swal.fire({
+                title: 'Próximamente te llegaran nuestras promociones al mail:',
+                imageUrl: 'img/prueba.gif',
+                text: `${respuesta.mail}`,
+                imageWidth: 128,
+                imageHeight: 128,
+                imageAlt: 'Cerveza gif',
+              })
+            }else{
+              Swal.fire({
+                icon: 'error',
+                title: 'Para poder recibir nuestras promociones tenés que registrar tu mail',
+              });
+            }
+          //blanqueo label
+          $("#email").val('');
+            }
+          });   
+      });
+  });        
+ };

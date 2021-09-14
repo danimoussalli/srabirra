@@ -1,101 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords"  content="Cerveza, Birra, Pilsener, Pale Ale, Stout, Porter, Bock, Rubia, Negra, Dorada">
-	<meta name="description" content="Conocé los diferentes tipos de cervezas. Encontrá la ideal para vos en nuestra tienda.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Cerveza, Birra, Pilsener, Pale Ale, Stout, Porter, Bock, Rubia, Negra, Dorada"/>
+    <meta name="description" content="Conocé los diferentes tipos de cervezas. Encontrá la ideal para vos en nuestra tienda."/>
 
-	<!-- CSS only -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/libs/animate.css" />
 
-	<link rel="stylesheet" href="css/libs/animate.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/957cb61ce5.js" crossorigin="anonymous"></script>
+    <!-- + CSS -->
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
 
-	<!-- JS, Popper.js, and jQuery -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-	<script src="https://kit.fontawesome.com/957cb61ce5.js" crossorigin="anonymous"></script>
-	
-	<link rel="stylesheet" href="css/animate.css">
+    <title>Tienda</title>
+  </head>
 
-	<link rel="stylesheet" href="css/estilos.css"/>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a href="#"><img class="espacio" src="img/logo.png" alt="Logo" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tiposdebirra.html">Tipos de Birra</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienes.html">Quiénes Somos</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Tienda<span class="sr-only"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
 
-	<title>Tienda</title>
-</head>
+              <li class="nav-item">
+                <a class="fas fa-shopping-cart" id="carrito" data-toggle="modal" data-target="#exampleModal">
+                  <span id="contadorCarrito"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-<body>
-		<header>
-			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				  <a href="#"><img class="espacio" src="img/logo.png" alt="Logo"></a>
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarNav">
-				    <ul class="navbar-nav">
-				      <li class="nav-item">
-				        <a class="nav-link " href="index.html">Inicio</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="tiposdebirra.html">Tipos de Birra</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="quienes.html">Quiénes Somos</a>
-				      </li>
-				      <li class="nav-item active">
-				        <a class="nav-link" href="#">Tienda<span class="sr-only"></span></a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="contacto.html">Contacto</a>
-				      </li>
-				    </ul>
-				  </div>
-				</nav>
-			</div>
-		</header>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="card__texto" id="exampleModalLabel">Mi Pedido</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="itemCarrito">
+        <p class="esconder card-title card__h2--marron">Tu carrito aún esta vacio</p>
+        <div class="" id="totalTexto"></div>
+      </div>
+      <div class="modal-footer">
+            <button type="button" class="btn btn-info bInfo bFuente mb-2">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-	<!-- Manejo de DOM -->
-	<div classs="container banner-text" id="nombre"></div>
-
-	<!-- CARDS desde JS -->
-	<div class="container" id="llamar">
-
-	</div>
-	
-
-
-
-	<footer>
-		<div class="container footer__contenedor--newsletter">
-			<div class="row justify-content-center ">
-			  <div class="col-md-12">
-			  	<h3 class="centrar">RECIBÍ LAS ÚLTIMAS NOVEDADES</h3>
-			  </div>
-			</div>
-			<div class="row">
-			  <div class="col-md-12 centrar">
-			  	<p>Suscribite a nuestro newsletter para no perderte ninguna birra.</p>
-			  </div>
-			</div>
-			<form class="form-inline justify-content-center">
-			  <div class="form-check mb-2 mr-sm-2">
-				<input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Ingresá tu email">
-			  </div>
-			  <button type="submit" class="btn btn-info bInfo bFuente mb-2">SUSCRIBIRSE</button>
-			</form>
-		</div>
-        <div class="container footer__contenedor--redes centrar">	
-			<ul class="fa-ul footer__contenedor--flex">
-  			<li><a class="fab fa-facebook-square fa-2x"href="#"></a></li>
-  			<li><a class="fab fa-instagram-square fa-2x"href="#"></a></li>  
-  			<li><a class="fab fa-twitter-square fa-2x"href="#"></a></li> 			
-			</ul>
+  </div>
+    <!-- CARDS desde JS -->
+    <div class="container">
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 card__margen"
+        id="todosLosProductos"
+      ></div>
+    </div>
+        
+    <div class="container">
+        <div id="suscripcion"></div>
+          <!-- Aquí suscripcion -->
         </div>
-	</footer>
-	<script src="js/wow.min.js"></script>
+        <div>
+          <h3 id ="checkout"></h3>
+        </div>
+    <footer>
+      <div class="container footer__contenedor--newsletter" id="newsletter">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <h3 class="centrar">RECIBÍ LAS ÚLTIMAS NOVEDADES</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 centrar">
+            <p>
+              Suscribite a nuestro newsletter para no perderte ninguna birra.
+            </p>
+          </div>
+        </div>
+        <form class="form-inline justify-content-center" id="formulario" method="post">
+          <div class="form-check mb-2 mr-sm-2">
+            <input
+              type="email"
+              class="form-control form-control-lg"
+              id="email"
+              placeholder="Ingresá tu email"
+            />
+          </div>
+          <button type="submit" class="btn btn-info bInfo bFuente mb-2" id="enviar">
+            SUSCRIBIRSE
+          </button>
+        </form>
+      </div>
+      <div class="container footer__contenedor--redes centrar">
+        <ul class="fa-ul footer__contenedor--flex">
+          <li><a class="fab fa-facebook-square fa-2x" href="#"></a></li>
+          <li><a class="fab fa-instagram-square fa-2x" href="#"></a></li>
+          <li><a class="fab fa-twitter-square fa-2x" href="#"></a></li>
+        </ul>
+      </div>
+    </footer>
+	    <!-- JQuery -->
+		<script		src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
+    <script src="js/wow.min.js"></script>
     <script>
-        new WOW().init();
+      new WOW().init();
     </script>
-	<script src="js/carrito.js"></script>
-</body>
+    <script src="js/productos.js"></script>
+    <script src="js/carrito.js"></script>
+    <!-- Sweet Alert -->
+    <script src="js/sweetalert2.all.min.js"></script>
+
+  </body>
 </html>
